@@ -7,7 +7,7 @@ var path = require('path'),
 // Defaults that you can access when you require this config.
 module.exports = {
     root: rootPath,
-    port: parseInt(process.env.PORT, 10) || 1200,
+    port: parseInt(process.env.PORT, 10) || 1400,
     hapi: {
         options: {
             views: {
