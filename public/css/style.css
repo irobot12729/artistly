@@ -455,3 +455,8 @@ text-shadow: none;
 .show{
     text-shadow: none;
 }
+
+div.coming.bgimg{
+    text-shadow: none;
+    color: #000;
+}
