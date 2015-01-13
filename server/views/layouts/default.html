@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+  {% include "../includes/head.html" %}
+
+</head>
+
+<body>
+  {% block content %}{% endblock %} {% include "../includes/foot.html" %}
+
+      <script>
+        $(document).ready(function () {
+            $('.actooltip').tooltip();
+            $('.grid').mixitup();
+
+            $('.toggle-btn').click(function () {
+                $('.toggle-menu').slideToggle('slow', function () {
+
+                });
+            });
+
+            ComingAnimations();
+
+        });
+    </script>
+
+</body>
+</html>
