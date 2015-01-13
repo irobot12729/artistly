@@ -460,3 +460,14 @@ div.coming.bgimg{
     text-shadow: none;
     color: #000;
 }
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+p{
+width: 90%;}
+
+.brand{
+font: 4em;
+}
+}
