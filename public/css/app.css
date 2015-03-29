@@ -85,7 +85,12 @@ blurb h3 {
     .landing .row .input-field {
         float: left;
     }
-
+    html {
+        background: none;
+    }
+    body {
+        background: black;
+    }
     .blurb {
         width: 100%;
     }
