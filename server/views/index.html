@@ -1,25 +1,38 @@
 {% extends './layouts/default.html' %} {% block title %}{{ title }}{% endblock %} {% block content %}
 
-    <div class="row-fluid coming bgimg">
-        <div class="span12">
-            <h2 class="brand" href="#">Artistly</h2>
-            <p>
-                Tip your favorite artist for an event.
-            </p>
-         <span class="form">
-            <form class="special">
-            <input type="email" class="js-email" placeholder="Email" value="" />
-            <button class="btn btn-success btn-large js-submit" type="submit">
-                Notify me</button>
-            </form>
-            <span class="error hide">Enter valid email</span>
-
-            <span class="form-info white">We hate spam. Trust us!</span>
-        </span>
+<body>
+    <div class="container landing">
+        <div class="row animated fadeInRight">
+            <div class="col s12">
+                <a href="" class="logo">artistly</a>
+            </div>
         </div>
-        <!--/span-->
-<a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
+        <div class="row animated fadeInLeft">
+            <div class="col s12">
+                <section class="blurb">
+                    <h3>Where art lovers meet indie events.</h3>
+                    <p class="flow-text">Find the coolest events in your city and support those indie artists</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="row animated fadeInLeft">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s5">
+                        <input id="email" type="email" class="js-email" placeholder="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s5">
+                        <a class="waves-effect waves-light btn invite js-submit">Get early access</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </div>
-    <!-- End Coming Bgimg-->
+</body>
+<!-- End Coming Bgimg-->
 
 {% endblock %}

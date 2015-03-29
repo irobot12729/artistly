@@ -34,7 +34,7 @@ module.exports = function(server) {
         config: controller.assets.css
     }, {
         method: 'GET',
-        path: '/fonts/{path*}',
+        path: '/font/{path*}',
         config: controller.assets.fonts
     }, {
         method: 'GET',
@@ -42,7 +42,7 @@ module.exports = function(server) {
         config: controller.assets.js
     }, {
         method: 'POST',
-        path: '/process_email/{email}',
+        path: '/process_email',
         config: controller.email.storeEmail
     }];
     return routeTable;

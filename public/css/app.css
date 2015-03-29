@@ -1,0 +1,101 @@
+/* global */
+
+html {
+    background: url(../img/body_bg2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.btn,
+.btn-large {
+    background-color: #65d165;
+    color: black;
+    padding-top: 2px;
+}
+
+.btn:hover,
+.btn-large:hover {
+    background-color: #a5e565;
+}
+
+.confirm{
+    background-color: #65d165!important;
+}
+
+.logo {
+    background: url(../img/artistly_logo_white.png) no-repeat;
+    text-indent: -9999px;
+    width: 237px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.blurb {
+    color: white;
+    margin: 0 auto;
+    width: 84%;
+}
+
+blurb h3 {
+    text-align: center
+}
+
+.blurb p {
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+#email {
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 320px;
+    padding-left: 2px;
+    color: white;
+}
+
+.landing .row .input-field {
+    float: none;
+    margin: 0 auto
+}
+
+.invite {
+    width: 320px;
+    border-radius: 5px;
+}
+/* mobile */
+
+@media only screen and (max-width: 667px) {
+    .landing .row .input-field {
+        float: left;
+    }
+    html {
+        background: none;
+    }
+    body {
+        background: black;
+    }
+    .blurb {
+        width: 100%;
+    }
+    .blurb h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}

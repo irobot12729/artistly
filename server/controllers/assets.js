@@ -33,7 +33,7 @@ module.exports = {
     fonts: {
         handler: {
             directory: {
-                path: './public/fonts'
+                path: './public/font'
             }
         },
         app: {

@@ -4,7 +4,7 @@ module.exports = {
         handler: function(request, reply) {
             // Render the view with the custom greeting
             reply.view('index', {
-                title: 'Tip your favorite artist for an event.- Artistly!'
+                title: 'Tip your favorite artist for an indie event.- Artistly!'
             });
         },
         app: {
