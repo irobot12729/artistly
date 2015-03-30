@@ -108,4 +108,9 @@ blurb h3 {
         font-size: 1.3rem;
         text-align: center;
     }
+	
+	  .invite, #email{
+			width: 100%;
+			margin: 0 auto;
+		}
 }
