@@ -42,13 +42,13 @@ body {
     height: 200px;
     display: block;
     margin: 0 auto;
-    margin-top: 40px;
 }
 
 .blurb {
     color: white;
     margin: 0 auto;
     width: 84%;
+	  text-align: center
 }
 
 blurb h3 {
@@ -79,6 +79,14 @@ blurb h3 {
     width: 320px;
     border-radius: 5px;
 }
+
+.landing{
+	position: relative;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+
 /* mobile */
 
 @media only screen and (max-width: 667px) {
