@@ -1,13 +1,26 @@
 require('dotenv').load();
 var collections = ['artistly'];
 var db = require("mongojs").connect(process.env.ARTISTLY_MONGODB_URL, collections);
+var Analytics = require('analytics-node');
+var analytics = new Analytics(process.env.SEGMENT_API);
+
+function sendToSegment(data) {
+    analytics.track({
+        userId: data.email,
+        event: 'Early access signup',
+        properties: {
+            referral: data.hash
+        }
+    });
+}
+
 
 function saveEmail(data, reply) {
     db.artistly.save({
         email: data.email,
         hash: data.hash
     }, function(err, success) {
-        console.log(success);
+        sendToSegment(data);
         if (err) reply('<span class="error">oops! looks like the server failed. Try again</span>');
         if (success) reply(1);
     });
