@@ -2,7 +2,7 @@ require('dotenv').load();
 var collections = ['artistly'];
 var db = require("mongojs").connect(process.env.ARTISTLY_MONGODB_URL, collections);
 var Analytics = require('analytics-node');
-var analytics = new Analytics(process.env.SEGMENT_API);
+var analytics = new Analytics(process.env.SEGMENT_KEY);
 
 function sendToSegment(data) {
     analytics.track({
